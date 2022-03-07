@@ -1,17 +1,16 @@
 import React from 'react'
+import FooterLeft from './FooterLeft'
+import './Video.css'
 
 export default function Video(props) {
-    const {url}=props
-	// write your code here
+	const { url, channel,description,song  } = props
+
 	return (
-        <div className='video'>
-    <video className='player' controls loop 
-    src={url}>
-      {/* <source src="./video.mp4" type="video/mp4"/> */}
-
-        </video>
-        
-
-        </div>
-    )
+		<div className="video">
+			<video className="player" loop src={url}></video>
+			<div className="bottom-controls">
+				<FooterLeft channel={channel} description={description} song={song} />
+			</div>
+		</div>
+	)
 }

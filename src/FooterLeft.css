@@ -1,0 +1,31 @@
+.footer-left{
+    position: relative;
+    display: flex;
+    
+    flex-grow: 1;
+    color: rgb(250, 250, 250);
+    pointer-events: none;
+    margin-left:15px;
+    margin-bottom: 30px;
+    z-index: 100;
+}
+.ticker{
+    height: fit-content;
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+.ticker marquee{
+    display: flex;
+    align-items: center;
+}
+.text{
+    width: 100%;
+}
+.text h3 {
+    padding-bottom: 20px;
+}
+.text p{
+        padding-bottom: 20px;
+
+}
